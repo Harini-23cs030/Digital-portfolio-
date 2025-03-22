@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARINI G - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, black,black);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg,red,gold);
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 130px;
+            height: 130px;
+            border: 4px palevioletred;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-container:hover img {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: crimson;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 10%;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-content {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            color: crimson: ";
+            margin-bottom: 1rem;
+        }
+
+        /* Skills */
+        .skill-bar {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-fill {
+            height: 10px;
+            width: 0;
+            background: lawngreen;
+            transition: width 1.5s ease-in-out;
+        }
+
+        /* Resume */
+        .resume-container {
+            text-align: center;
+        }
+
+        .download-button {
+            background: ;
+            color: floralwhite;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background: #ff758c;
+            color: antiquewhite;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffdf7e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="profile-container">
+            <img src="harini.jpg" alt="Your Profile Picture">
+        </div>
+        <h1>HARINI G</h1>
+        <p class="subtitle">Passionate Student & Future Developer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm Harini, a passionate and hardworking B.Sc. Computer Science student with a keen interest in programming, problem-solving, and web development. Currently in my 4th semester, I'm building a strong foundation in Python and Java while actively working on projects to enhance my technical skills.Apart from coding, I enjoy exploring creative projects, staying updated with tech trends, and refining my problem-solving abilities. I'm always eager to take on new challenges and contribute to innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="fade-in">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Valliammal College for Women, University of Madras - B.Sc. Computer Science</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <p>Python</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            <p>Java</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+            <p>Html</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            <p>Css</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+            <p>JavaScript</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+            <p>MS office</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="fade-in">
+        <div class="section-content resume-container">
+            <h2>Resume</h2>
+            <a href="Curriculum Vitae.pdf" target="_blank" class="download-button">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HARINI G</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            document.querySelectorAll("section").forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight - 100) {
+                    section.classList.add("visible");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
